@@ -1,0 +1,46 @@
+.btn{
+    display: flex;
+    padding: 15px 24px 17px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 8px;
+    background: $black_main;
+
+    color: $white_main;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+
+    border: 2px solid $black_main;
+}
+.btn_outlined{
+    color: $black_main;
+    background: $white_main;
+}
+
+.btn_small{
+    display: flex;
+    padding: 4px 16px;
+    align-items: flex-start;
+    gap: 8px;
+
+    border-radius: 10000px;
+
+   
+}
+
+.btn_small_outlined{
+    color: $black_main;
+    background: $white_main;
+
+    border: 1px solid $black_main;
+    padding: 4px 16px;
+    color: $black_main;
+    background: $white_main;
+    border-radius: 10000px;
+
+    
+}

@@ -1,0 +1,106 @@
+.header{
+    padding: 38px 0px;
+    
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        display: inline-flex;
+        height: 32px;
+        padding: 4px 8px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0;
+
+        border-radius: 8px;
+        border: 2px solid #000;
+    }
+    &__text-logo{
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &__list {
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 32px;
+        list-style: none;
+    }
+    &__link{
+        color: $black_main;
+        text-decoration: none;
+    }
+    &__empty {
+        width: 100px;
+    }
+    &__kryzok{
+        position: absolute;
+        top: 40px;
+        right: 148px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 170px;
+        height: 170px;
+        flex-shrink: 0;
+        border-radius: 10000px;
+        background: #F1F1F1;
+    }
+    &__kryzok2{
+        position: absolute;
+        top: 362px;
+        right: 1167px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+        flex-shrink: 0;
+        border-radius: 10000px;
+        background: #F1F1F1;
+    }
+    &__kryzok3{
+        position: absolute;
+        top: 410px;
+        right: 169px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+        border-radius: 10000px;
+        background: #F1F1F1;
+
+    }
+}
+
+@media (max-width: 1200px){
+    .header{
+            &__kryzok{
+                display: none;
+            }
+            &__kryzok2{
+                display: none;
+            }
+            &__kryzok3{
+                display: none;
+            }
+    }
+
+}
+
+@media (max-width: 800px){
+    .header {
+        &__content{
+            flex-direction: column;
+            row-gap: 16px;
+        }
+        &__empty{
+            width: 20px;
+        }
+    }
+}
